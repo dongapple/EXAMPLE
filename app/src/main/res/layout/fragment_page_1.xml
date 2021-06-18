@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="현위치"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="412dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="학교 공지1"
+                        android:textSize="60dp" />
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="412dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="학교 공지2"
+                        android:textSize="60dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="412dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="학교 공지3"
+                        android:textSize="60dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="그룹 활동"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:weightSum="4"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                tools:layout_editor_absoluteX="-16dp">
+
+                <Button
+                    android:id="@+id/btn_move_mentor"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:background="@drawable/mentor_btn"/>
+
+
+                <Button
+                    android:id="@+id/btn_move_study"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:background="@drawable/study_btn"/>                   />
+
+                <Button
+                    android:id="@+id/btn_move_contest"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:background="@drawable/contest_btn"/>
+
+                <Button
+                    android:id="@+id/btn_move_meeting"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:background="@drawable/meeting_btn" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="공간 대여"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <LinearLayout
+                android:id="@+id/rent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/univ" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="자료 모음"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rent" />
+
+            <LinearLayout
+                android:id="@+id/Vowel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="80dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="스마트창의융합대학"
+                    android:textSize="10dp"
+                   />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="80dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="신학       대학"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="80dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="인문 예술 대학"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="80dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="사회 과학 대학"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
